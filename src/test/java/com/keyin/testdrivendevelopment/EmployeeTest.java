@@ -21,4 +21,9 @@ public class EmployeeTest {
         Employee employee = new Employee("David", "Temple");
         Assertions.assertNotNull("Temple", employee.getLastName());
     }
+    @Test
+    public void testEmployeeFullName(){
+        Employee employee = new Employee();
+        Assertions.assertTrue(true);
+    }
 }

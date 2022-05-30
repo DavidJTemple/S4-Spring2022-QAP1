@@ -23,4 +23,8 @@ public class Employee {
     public String getLastName() {
         return this.lastName;
     }
+
+    public boolean returnTrue(boolean truthy) {
+        return true;
+    }
 }
