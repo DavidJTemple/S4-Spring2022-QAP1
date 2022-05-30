@@ -16,15 +16,19 @@ public class Employee {
     }
 
 
+    public void setFirstName(String firstNameArg) {
+        this.firstName = firstNameArg;
+    }
     public String getFirstName() {
         return this.firstName;
     }
+
 
     public String getLastName() {
         return this.lastName;
     }
 
-    public boolean returnTrue(boolean truthy) {
-        return true;
+    public boolean returnTrue() {
+        return firstName == getFirstName();
     }
 }

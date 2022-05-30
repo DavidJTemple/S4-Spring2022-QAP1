@@ -8,22 +8,27 @@ public class EmployeeTest {
     @Test
     public void testNoEmployeeName(){
         Employee employee = new Employee();
-        Assertions.assertEquals("", "");
+        Assertions.assertEquals(employee.getFirstName(), "");
+
+        employee.setFirstName("John");
+        Assertions.assertEquals("John", employee.getFirstName());
 
     }
     @Test
     public void testEmployeeFirstName(){
         Employee employee = new Employee("David", "Temple");
         Assertions.assertEquals("David", employee.getFirstName());
+        Assertions.assertNotEquals("Reggie", employee.getFirstName());
     }
     @Test
-    public void testEmployeeLastName(){
+    public void testEmployeeNames(){
         Employee employee = new Employee("David", "Temple");
         Assertions.assertNotNull("Temple", employee.getLastName());
+        Assertions.assertNotEquals("Johnson", employee.getLastName());
     }
     @Test
-    public void testEmployeeFullName(){
-        Employee employee = new Employee();
-        Assertions.assertTrue(true);
+    public void testEmployeeBoolean(){
+        Employee employee = new Employee("David", "Temple");
+        Assertions.assertTrue(employee.returnTrue());
     }
 }

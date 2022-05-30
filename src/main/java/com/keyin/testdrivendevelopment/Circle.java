@@ -13,6 +13,13 @@ public class Circle {
 
     }
 
+    public void setRadius(double radArg){
+        this.radius = radArg;
+    }
+    public double getRadius(){
+        return radius;
+    }
+
     public double getArea(){
         return(radius * radius * Math.PI);
     }
