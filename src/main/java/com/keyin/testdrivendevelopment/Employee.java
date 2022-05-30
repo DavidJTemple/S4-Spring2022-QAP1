@@ -29,6 +29,6 @@ public class Employee {
     }
 
     public boolean returnTrue() {
-        return firstName == getFirstName();
+        return firstName == getFirstName() && lastName == getLastName();
     }
 }
